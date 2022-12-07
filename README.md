@@ -1,8 +1,8 @@
 #
 
 
-<h3 align="center">authifyWeb: The TRUST company for the digital future </h3>
-<h3 align="center"><a href ="https://authifyweb.github.io/" >authifyWeb</a> is Bridging the `TRUST` gap between online business and customers. </h3>
+<h3 align="center">authifyWeb: The TRUST tribe for the digital future </h3>
+<h3 align="center"><a href ="https://authifyweb.github.io/" >authifyWeb</a> is bridging the `TRUST` gap between online business and customers. </h3>
 
 ### Some of our projects 
 
