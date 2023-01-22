@@ -209,7 +209,7 @@
   
   .main_container{
     text-align:center;
-    padding-top:15vh;
+    padding-top:9vh;
     color:#A2FB15;
     
    
@@ -240,18 +240,17 @@ text-decoration:none;
 
 }
 .projects{
-	padding-top:15px;
+	padding-top:10px;
     line-height:1.5em;
     color:#EDE3E3;
 }
+.img{
+	display:block;
+	
+}
   @media(min-width: 320px) and (max-width: 999px) {
 	
-	.info{
-	padding-top:10px;
-	color:white;
-	font-size:12px;
-	width:100%;
-}
+.img{display:none;}
 h1{
     color:white;
     font-size:30px;
@@ -275,9 +274,9 @@ h1{
 
 #donate_box{
 	position: fixed;
-	//top:90vh;
+/*	top:95vh; */
 	bottom:2.5vh;
-	right:3vw;
+	right:1.5vw;
 	
 	
 }
