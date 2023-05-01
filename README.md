@@ -8,7 +8,7 @@ We help consumers identify fake websites and emails, and make sure that they don
 
 ### Some of our projects 
 
-<a href ="https://chat.authifyweb/" target="_blank">authifyChat</a>
+<a href ="https://chat.authifyweb.com/" target="_blank">authifyChat</a>
 : One stop solution for consumers to easily access contact pages for their respective needs.
 
 <a href ="https://url.authifyweb.com/" target="_blank">authifyURL</a>
