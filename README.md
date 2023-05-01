@@ -14,7 +14,7 @@ We help consumers identify fake websites and emails, and make sure that they don
 <a href ="https://url.authifyweb.com/" target="_blank">authifyURL</a>
 : One stop site for customers to make sure websites are valid and part of a specific brand/company.
 
-<a href ="https://now.authifyweb.com" target="_blank">aW_Extensions</a> 
+<a href ="https://now.authifyweb.com" target="_blank">authifyNow</a> 
 : Chrome and firefox extensions than connect with authifyURL database and helps to verify websites in one click.
  
 
