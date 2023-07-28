@@ -61,6 +61,7 @@
       }
       
       .dropdown-content {
+        padding-top:20px;
         display: none;
         position: absolute;
         background-color: #1f282d;
