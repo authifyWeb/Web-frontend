@@ -340,7 +340,7 @@ h1{
 /*	top:95vh; */
 	bottom:2.5vh;
 	right:1.5vw;
-	
+	z-index:8;
 	
 }
 
