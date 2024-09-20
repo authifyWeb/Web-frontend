@@ -531,6 +531,50 @@
 		text-decoration:none;
 		}
 
+.FAQ {
+   
+    color: #e0e0e0; 
+    padding: 20px;
+    border:1px solid #767676;
+    border-radius: 8px;
+    margin:10px;
+}
+
+.FAQ details {
+    margin-bottom: 15px;
+}
+
+.FAQ summary {
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #3a4348; 
+    border-radius: 5px;
+    background-color: #2a3338; 
+    transition: background-color 0.3s;
+}
+
+.FAQ summary:hover {
+    background-color: #3a4348; 
+}
+
+.FAQ p {
+    margin: 10px 0 0 0;
+    line-height: 1.5; 
+}
+.FAQ h3{
+    font-size:1rem;
+    margin:20px auto;
+}
+.FAQ a{
+    color:skyblue;
+    text-decoration:none;
+}
+
+
+
+
 /* Responsiveness on large screens */
         @media (min-width: 768px) {
 		
@@ -586,6 +630,18 @@
             .integrations-section a{
                 font-size:1 rem;
             }
+            .FAQ {
+        padding: 30px auto;
+        margin: 50px 300px;
+    }
+    .FAQ h3{
+        font-size: 1.5rem;
+    }
+
+    .FAQ summary {
+        font-size: 16px; 
+        padding: 8px;
+    }
         }
     </style>   
 	</head>
@@ -681,6 +737,7 @@
             </div>
         </div>
 		</div>
+       
         <div class="container integrations-section">
             <h2>Trusted Networks</h2>
             <p>We support a variety of platforms, including personal websites, social media sites, linkinbio pages, mobile app stores, payment pages, crowdfunding platforms and many more.</p>
@@ -710,7 +767,31 @@
             
             <p style="font-size:1rem;"><a href="https://authifyweb.com/pages/supported-sites" class="explore-link">Explore all our supported sites</a></p>
         </div>
-        
+        <div class="FAQ">
+            <h3>Frequently Asked Questions</h3>
+            <details>
+                <summary>What is authifyWeb?</summary>
+                <p>authifyWeb is a social project to help internet users easily identify online frauds and impersonation scams.</p>
+                <p>It also helps brands, creators, influencers etc to protect their brand reputation.</p>
+            </details>
+            <details>
+                <summary>Is authifyWeb free?</summary>
+                <p>Absolutely! You can verify URLs on our site at no cost.</p>
+                <p>We rely on generous donations from users like you for support.</p>
+            </details>
+            <details>
+                <summary>Is authifyWeb Safe?</summary>
+                <p>Yes authifyWeb is completely safe and trustworthy.</p>
+                <p>We are completely transparent about how our code works and most of our codes are available on our Github Repository.</p>
+                <p>The data we use to verify is submitted directly by the brand or the celebrity themselves.</p>
+            </details>
+            <details>
+                <summary>How can I support authifyWeb?</summary>
+                <p>You can support us by <a href="https://authifyweb.com/pages/donate.html"> donating </a> to the cause or by spreading information about authifyWeb and it services. You can <a href="https://authifyweb.com/pages/contribute.html"> get started</a> here.</p>
+                <p>You can create blog posts, video contents etc to create awareness among your community.</p>
+            </details>
+            
+        </div>
 		<div class="container blog-section">
         <h2 class="section-title">Latest from authifyWeb Blog</h2>
 		<h3>News, Updates & More on authifyCollective</h3>
@@ -718,7 +799,7 @@
         <div id="blog-posts">
             
         </div>
-    </div>
+    </div> 
 		
 	<div class="footer"> 
            
