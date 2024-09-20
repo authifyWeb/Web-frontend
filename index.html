@@ -36,11 +36,11 @@
     font-weight: 400;
     
     src: local(''),
-         url('../resources/fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../resources/fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../resources/fonts/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../resources/fonts/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../resources/fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+         url('./resources/fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./resources/fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./resources/fonts/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./resources/fonts/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./resources/fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
   }
   *{
       box-sizing: border-box;
@@ -304,29 +304,59 @@
             padding: 20px;
         }
   
-  header {
-           
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-          /*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
+        
+        
+    h2 {
+    font-size: 12px;
+    text-align:left;
+    font-weight: normal;
+    color:white;
+    text-transform: uppercase;
+    margin-bottom: 1rem;  
+}
+/* Main section styles */
+        .main-section{
+            padding:2rem;
+            line-height:1.5rem;
+            display: flex;
+            flex-direction:column;
+            
         }
-        header h1 {
-            font-size: 1.6rem;
+        .main-section h1{
+            
+            font-size: 12px;
             margin-top:50px;
+            font-weight: normal;
+            color:white;
+            text-transform: uppercase;
         }
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+
+        .main-section p{
+            padding-top:20px;
+            font-size:1.5em;
+            font-weight:normal;
+            line-height:1.8rem;
+
+            
         }
-        /* Main section styles */
-        .main-section {
+        .main-section h2{
+            color:#767676;
+            font-size: 1.2rem;
+            display:none;
+        }
+
+        
+
+        .second-section {
             display: flex;
             flex-direction: column;
+           
+            margin:20px;      
             margin-top: 40px;
 			
             padding: 20px;
-            background-color: #1f282d;
+            background-color: #14191e;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
@@ -335,15 +365,18 @@
 			
         }
         .section-title {
-            font-size: 1.8rem;
+            font-size: 12px;
+            font-weight: normal;
+            color:white;
+            text-transform: uppercase;
             margin-bottom: 10px;
-            color: #767676;
-			background-color:#1f282d;
+           
+			
         }
         .section-content {
             font-size: 1.2rem;
             line-height: 1.6;
-			background-color:#1f282d;
+			
 			align-items: center;
         }
         /* Buttons styles */
@@ -351,7 +384,7 @@
             margin-top: 20px;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: left;
         }
         .button {
             padding: 12px 24px;
@@ -385,7 +418,7 @@
             cursor: pointer;
             font-weight: bold;
             padding: 10px;
-           background-color:#1f282d;
+            background-color:#1f282d;
             border: none;
             outline: none;
             transition: background-color 0.3s ease;
@@ -401,14 +434,72 @@
 		color: skyblue;
 		text-decoration:none;
 		}
-        /* Blog section styles */
+
+/*Integration - Trusted Networks */
+        
+
+.icon-container {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-bottom: 1rem; 
+    margin-top:2rem;
+    align-items:center;
+    
+}
+
+.icon {
+    margin: 0 15px; /* Space b/w icons */
+    
+}
+
+.integrations-section {
+    padding: 2rem;
+    
+    color: #ffffff;
+   
+    line-height:1.5rem;
+    display: flex;
+    flex-direction:column;
+}
+
+
+
+.integrations-section p{
+    padding-top:20px;
+    text-align: left;
+            font-size:1.5em;
+            font-weight:normal;
+            line-height:1.8rem;
+}
+
+.explore-link {
+    color: skyblue; 
+    text-decoration: none; 
+}
+
+.explore-link:hover {
+    text-decoration: none;
+    color:goldenrod; 
+}
+
+
+/* Blog section styles */
         .blog-section {
             margin-top: 40px;
+            background-color:#14191e;
+            border-radius: 8px;
+        }
+        .blog-section h2{
+            font-weight: normal;
+            color:white;
+            text-transform: uppercase;
+            
         }
         .blog-post {
             margin-bottom: 20px;
             padding: 20px;
-            background-color: #1f282d;
+            background-color:#171c20;
             border-radius: 8px;
             box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.1);
         }
@@ -428,29 +519,44 @@
             text-decoration: none;
         }
         .post-link:hover {
-            text-decoration: underline;
+            text-decoration: none;
+            color:goldenrod;
         }
         .post-date {
             font-size: 1rem;
             color: #666;
         }
 		.blog-section a {
-		color:#ede3e3;
+		color:skyblue;
 		text-decoration:none;
 		}
 
-        /* Media queries for responsiveness */
+/* Responsiveness on large screens */
         @media (min-width: 768px) {
-		header h1 {
-            font-size: 2.5rem;
-            margin-top:50px;
-        }header p {
-            font-size: 20px;
-			margin-top:5px;
-			}
-            .main-section {
+		
+            .main-section{
+            margin:50px;
+            text-align:left;
+            justify-content: top;
+            height:400px;
+            padding-left:50px;
+            padding-right:200px;
+            
+
+            }
+            .main-section p{
+                font-size:2.8em;
+                line-height:1.3em;      
+            }
+            .second-section {
                 flex-direction: row;
-				
+                padding: 100px 50px;
+                margin:auto;
+                     
+               
+            }
+            .section-title{
+                color:white;
             }
             .left-section {
                 flex: 1;
@@ -461,6 +567,24 @@
                 flex: 1;
                 padding-left: 20px;
                 margin-bottom: 0;
+            }
+            .integrations-section{
+            margin:50px;
+            text-align:left;
+            justify-content: top;
+            padding-left:50px;
+            padding-right:200px;
+            
+
+            }
+
+
+            .integrations-section p{
+            font-size:2.8em;
+            line-height:1.3em;       
+            }
+            .integrations-section a{
+                font-size:1 rem;
             }
         }
     </style>   
@@ -514,21 +638,27 @@
                 </ul>
             </div>
         </nav>   
-		 <header>
-        <div class="container">
-            <h1>Welcome to authifyWeb</h1>
-            <p>Bridging the digital TRUST gap</p>
+		
+        
+           
+        
+		
+    
+        <div class="main-section">
+            <h1>What is authifyWeb</h1>
+            <p>authifyWeb is a powerful social project aimed at enhancing online security. At its core, it provides free tools, empowering users to identify scams and impersonation fraud.</p>
+            
         </div>
-		</header>
     
 		
-		 <div class="container main-section">
+		 <div class="container second-section">
         <div class="left-section">
-            <h2 class="section-title">About</h2>
-            <p class="section-content">authifyWeb provides free online tools like authifyURL and authifyFame to protect you against online scams & impersonation.</p>
+            <h2 class="section-title">authifyWeb Tools</h2>
+            <p class="section-content">authifyWeb provides free online tools like authifyURL and authifyFame to protect users from online scams.</p>
             <div class="buttons">
-                <a href="#about" class="button" style="display:none;">About</a>
+                
                 <a href="https://authifyweb.com/pages/donate.html" class="button" style="background-color:goldenrod; color:navy;">Donate</a>
+                <a href="#about" class="button" style="display:none;">About</a>
             </div>
         </div>
         <div class="right-section">
@@ -551,8 +681,38 @@
             </div>
         </div>
 		</div>
+        <div class="container integrations-section">
+            <h2>Trusted Networks</h2>
+            <p>We support a variety of platforms, including personal websites, social media sites, linkinbio pages, mobile app stores, payment pages, crowdfunding platforms and many more.</p>
+            
+            <div class="icon-container" >
+                <div class="icon" >
+                    <!-- Twitter SVG -->
+                    <svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.94 7.91a3.49 3.49 0 0 0-6.94.26C8.46 9.63 5 6 5 6c-1 6 2 8.75 2 8.75C5.64 16 3 16 3 16s1.58 3 8.58 3S19 11 19 11a3.08 3.08 0 0 0 2-3.3 8 8 0 0 1-2.06.21" style="fill:none;stroke:#fff;"/></svg>
+                </div>
+                <div class="icon" >
+                    <!-- Instagram SVG -->
+                    <svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" data-name="Layer 1"><path d="M17.34 5.46a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2m4.6 2.42a7.6 7.6 0 0 0-.46-2.43 4.9 4.9 0 0 0-1.16-1.77 4.7 4.7 0 0 0-1.77-1.15 7.3 7.3 0 0 0-2.43-.47C15.06 2 14.72 2 12 2s-3.06 0-4.12.06a7.3 7.3 0 0 0-2.43.47 4.8 4.8 0 0 0-1.77 1.15 4.7 4.7 0 0 0-1.15 1.77 7.3 7.3 0 0 0-.47 2.43C2 8.94 2 9.28 2 12s0 3.06.06 4.12a7.3 7.3 0 0 0 .47 2.43 4.7 4.7 0 0 0 1.15 1.77 4.8 4.8 0 0 0 1.77 1.15 7.3 7.3 0 0 0 2.43.47C8.94 22 9.28 22 12 22s3.06 0 4.12-.06a7.3 7.3 0 0 0 2.43-.47 4.7 4.7 0 0 0 1.77-1.15 4.85 4.85 0 0 0 1.16-1.77 7.6 7.6 0 0 0 .46-2.43c0-1.06.06-1.4.06-4.12s0-3.06-.06-4.12M20.14 16a5.6 5.6 0 0 1-.34 1.86 3.06 3.06 0 0 1-.75 1.15 3.2 3.2 0 0 1-1.15.75 5.6 5.6 0 0 1-1.86.34c-1 .05-1.37.06-4 .06s-3 0-4-.06a5.7 5.7 0 0 1-1.94-.3 3.3 3.3 0 0 1-1.1-.75 3 3 0 0 1-.74-1.15 5.5 5.5 0 0 1-.4-1.9c0-1-.06-1.37-.06-4s0-3 .06-4a5.5 5.5 0 0 1 .35-1.9A3 3 0 0 1 5 5a3.1 3.1 0 0 1 1.1-.8A5.7 5.7 0 0 1 8 3.86c1 0 1.37-.06 4-.06s3 0 4 .06a5.6 5.6 0 0 1 1.86.34 3.06 3.06 0 0 1 1.19.8 3.1 3.1 0 0 1 .75 1.1 5.6 5.6 0 0 1 .34 1.9c.05 1 .06 1.37.06 4s-.01 3-.06 4M12 6.87A5.13 5.13 0 1 0 17.14 12 5.12 5.12 0 0 0 12 6.87m0 8.46A3.33 3.33 0 1 1 15.33 12 3.33 3.33 0 0 1 12 15.33"/></svg>
+                </div>
+
+                <div class="icon" >
+                    <!-- Patreon SVG -->
+                    <svg width="40" height="40" viewBox="-2 -2.5 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="M12.808.01c-3.95 0-7.164 3.196-7.164 7.125 0 3.916 3.214 7.103 7.164 7.103 3.938 0 7.142-3.187 7.142-7.103 0-3.93-3.204-7.125-7.142-7.125M.05 18.99V.01h3.502v18.98z"/></svg>
+                </div>
+                <div class="icon">
+                    <!-- Open Collective-->
+                    <svg width="40" height="40" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="M209.765 128.15c0 16.013-4.9 31.34-13.266 44.575l33.447 33.447a128.9 128.9 0 0 0 25.783-77.35c0-29.265-9.754-55.751-26.47-77.336l-32.776 32.729a79.44 79.44 0 0 1 13.267 43.888z"/><path d="M127.513 210.355c-45.367-.086-82.125-36.838-82.22-82.205.069-45.386 36.835-82.166 82.22-82.252 16.732 0 32.058 4.901 44.607 13.267l32.744-32.776A128.97 128.97 0 0 0 127.514.636C57.123.636 0 57.76 0 128.15c0 70.359 57.124 127.513 127.513 127.513a125.13 125.13 0 0 0 77.351-26.501l-33.447-33.431c-11.861 9.754-27.157 14.624-43.904 14.624"/></g></svg>
+                </div>
+            </div>    
+          
+        
+            
+            
+            <p style="font-size:1rem;"><a href="https://authifyweb.com/pages/supported-sites" class="explore-link">Explore all our supported sites</a></p>
+        </div>
+        
 		<div class="container blog-section">
-        <h2 class="section-title">Latest Blog Posts</h2>
+        <h2 class="section-title">Latest from authifyWeb Blog</h2>
 		<h3>News, Updates & More on authifyCollective</h3>
         
         <div id="blog-posts">
@@ -573,17 +733,17 @@
 		<script>
         // Function to fetch and display blog posts from RSS feed
         function fetchBlogPosts() {
-            const feedUrl = 'https://collective.authifyweb.com/feed'; // Replace with your actual RSS feed URL
+            const feedUrl = 'https://collective.authifyweb.com/feed/'; 
             fetch(feedUrl)
                 .then(response => response.text())
                 .then(data => {
                     const parser = new DOMParser();
                     const xmlDoc = parser.parseFromString(data, 'text/xml');
-                    const items = xmlDoc.querySelectorAll('item'); // Adjust to your feed structure
+                    const items = xmlDoc.querySelectorAll('item'); 
                     const blogPostsContainer = document.getElementById('blog-posts');
                     let postsHTML = '';
 
-                    // Display up to 3 latest posts
+                    // Display up to 5 latest posts
                     for (let i = 0; i < Math.min(items.length, 5); i++) {
                         const title = items[i].querySelector('title').textContent;
                         const link = items[i].querySelector('link').textContent;
@@ -602,7 +762,7 @@
                 });
         }
 
-        // Call the function to fetch and display blog posts
+        // Call function to fetch and display blog posts
         fetchBlogPosts();
     </script>
 		
