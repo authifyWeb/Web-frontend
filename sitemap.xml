@@ -36,4 +36,21 @@
 <lastmod>2024-10-21T19:15:01+00:00</lastmod>
 <priority>0.80</priority>
 </url>
+
+
+<!--  Other subdomains  -->
+
+    <url>
+        <loc>https://fame.authifyweb.com/sitemap.xml</loc>
+        <lastmod>2024-10-22</lastmod>
+    </url>
+    <url>
+        <loc>https://brand.authifyweb.com/sitemap.xml</loc>
+        <lastmod>2024-10-22</lastmod>
+    </url>
+    <url>
+        <loc>https://collective.authifyweb.com/sitemap.xml</loc>
+        <lastmod>2024-10-22</lastmod>
+    </url>
+    
 </urlset>
